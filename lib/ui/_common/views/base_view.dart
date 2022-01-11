@@ -1,6 +1,4 @@
-import 'package:animated/animated.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
 
 import '../../../locator.dart';

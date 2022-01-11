@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:masterproject/locator.dart';
 import 'package:masterproject/ui/_common/views/categories/categories.dart';
 import 'package:masterproject/ui/_common/views/mcmenu/drank.dart';
-import 'package:masterproject/ui/_common/views/navigation/viewmodels/navigation_viewmodel.dart';
 import 'package:masterproject/ui/_common/views/navigation/viewmodels/views/navigation_view.dart';
 
 class SideView extends StatelessWidget {
@@ -13,7 +11,6 @@ class SideView extends StatelessWidget {
   final String size;
   @override
   Widget build(BuildContext context) {
-    var navModel = locator<NavigationViewModel>();
     ScrollController jeng = ScrollController();
 
     return Scaffold(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:masterproject/locator.dart';
 import 'package:masterproject/ui/_common/views/categories/categories.dart';

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:masterproject/locator.dart';
 import 'package:masterproject/ui/_common/views/categories/categories.dart';
@@ -11,7 +10,7 @@ class DessertView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var navModel = locator<NavigationViewModel>();
-    ScrollController jeng = ScrollController();
+    ScrollController listController = ScrollController();
 
     return Scaffold(
       body: Container(
@@ -19,7 +18,7 @@ class DessertView extends StatelessWidget {
         child: Stack(
           children: [
             ListView(
-              controller: jeng,
+              controller: listController,
               children: [
                 /* */
                 SizedBox(
@@ -120,7 +119,7 @@ class DessertView extends StatelessWidget {
                 )
               ],
             ),
-            BottomNavBar(jeng: jeng)
+            BottomNavBar(jeng: listController)
           ],
         ),
       ),

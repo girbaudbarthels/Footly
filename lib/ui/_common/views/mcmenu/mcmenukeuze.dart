@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:masterproject/locator.dart';
 import 'package:masterproject/ui/_common/views/categories/categories.dart';
 import 'package:masterproject/ui/_common/views/mcmenu/size.dart';
-import 'package:masterproject/ui/_common/views/navigation/viewmodels/navigation_viewmodel.dart';
 import 'package:masterproject/ui/_common/views/navigation/viewmodels/views/navigation_view.dart';
 
 class McmenuView extends StatelessWidget {
   const McmenuView({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    var navModel = locator<NavigationViewModel>();
     ScrollController jeng = ScrollController();
 
     return Scaffold(
       body: Container(
-        //color: Theme.of(context).primaryColorLight,
         child: Stack(
           children: [
             ListView(

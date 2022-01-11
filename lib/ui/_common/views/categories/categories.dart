@@ -2,12 +2,10 @@ import 'dart:async';
 
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:masterproject/helpers/file_utils.dart';
 import 'package:masterproject/locator.dart';
-import 'package:masterproject/main.dart';
 import 'package:masterproject/ui/_common/views/desserten/desserten.dart';
 import 'package:masterproject/ui/_common/views/fieten/frieten.dart';
 import 'package:masterproject/ui/_common/views/happymeal/happymeal.dart';
@@ -38,7 +36,6 @@ class _CategoriesViewState extends State<CategoriesView> {
   List lijstItems = [];
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getList();
   }
@@ -52,7 +49,6 @@ class _CategoriesViewState extends State<CategoriesView> {
 
   @override
   Widget build(BuildContext context) {
-    var navModel = locator<NavigationViewModel>();
     ScrollController jeng = ScrollController();
 
     return Scaffold(
@@ -308,8 +304,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                                         SharedPreferences prefs =
                                             await SharedPreferences
                                                 .getInstance();
-                                        List list =
-                                            prefs.getStringList("orderList");
+
+                                        prefs.getStringList("orderList");
                                         Get.back();
                                       },
                                     ),

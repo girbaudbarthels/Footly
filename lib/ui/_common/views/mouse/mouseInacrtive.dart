@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:masterproject/ui/_common/views/mouse/mouseAnim.dart';
 
 class MouseInactiveWidget extends StatefulWidget {

@@ -2,8 +2,6 @@ import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:get/get.dart';
 import 'package:masterproject/ui/_common/views/mouse/mouseAnim.dart';
 import 'package:oktoast/oktoast.dart';
 
@@ -65,11 +63,9 @@ class _MouseWidgetState extends State<MouseWidget> {
               progress = 0;
             });
             if (widget.pay != null && widget.pay) {
-              int result =
-                  await audioPlayer.play('assets/pay.mp3', isLocal: true);
+              await audioPlayer.play('assets/pay.mp3', isLocal: true);
             } else {
-              int result =
-                  await audioPlayer.play('assets/select.mp3', isLocal: true);
+              await audioPlayer.play('assets/select.mp3', isLocal: true);
 
               switch (widget.cardText.toString()) {
                 case "Menu's":

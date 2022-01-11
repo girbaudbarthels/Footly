@@ -1,8 +1,6 @@
 import 'dart:async';
-import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:masterproject/ui/_common/views/base_view.dart';
@@ -20,7 +18,6 @@ class Navigation extends StatefulWidget {
 class _NavigationState extends State<Navigation> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
 

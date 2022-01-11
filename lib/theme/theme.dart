@@ -21,7 +21,6 @@ ThemeData lightTheme = ThemeData.light().copyWith(
   cardColor: Colors.white,
 
   ///Onboarding Text
-  accentColor: Colors.white,
   scaffoldBackgroundColor: Colors.grey[100],
   buttonColor: Colors.blue,
 
