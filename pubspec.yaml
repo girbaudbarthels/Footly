@@ -1,0 +1,55 @@
+name: masterproject
+description: A new Flutter project.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.1.4
+  get_it: ^6.1.1
+  provider: ^5.0.0
+  cupertino_icons: ^1.0.2
+  desktop_window: ^0.4.0
+  font_awesome_flutter: ^9.0.0
+  animated: ^2.0.0
+  shared_preferences: ^2.0.5
+  badges: ^2.0.1
+  audioplayers: ^0.19.0
+  oktoast: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+  assets:
+    - assets/
+    - assets/rundsvlees/
+    - assets/kip/
+    - assets/vis/
+    - assets/mcmoment/
+    - assets/veggie/
+    - assets/frieten/
+    - assets/salade/
+    - assets/desserten/
+    - assets/happymeal/
+    - assets/koudedranken/
+    - assets/warmedranken/
+    - assets/sauzen/
+    - assets/mcmenu/
+    - assets/mcmenu/side/
+    - assets/mcmenu/drank/
+    - assets/mcmenu/suazen/
+
+  uses-material-design: true
+
+
